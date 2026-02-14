@@ -75,3 +75,32 @@ h1 {
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   margin-top: 20px;
 }
+.projects {
+  padding: 60px;
+  text-align: center;
+}
+
+.projects-grid {
+  margin-top: 40px;
+  display: grid;
+
+  /* شبكة تلقائية متجاوبة */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+/* تنسيق الصور */
+.projects-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+/* تأثير احترافي */
+.projects-grid img:hover {
+  transform: scale(1.05);
+}
